@@ -9,9 +9,10 @@
     <title>Sign Up</title>
 </head>
 <body>
+   <div class="container">
     <img id="tree" src="https://images.unsplash.com/photo-1582510877465-8e2e899a94b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80" alt="trees">
     <p class="imgText">Photo by <a href="https://unsplash.com/@lppoitras" class="test">Louis-Philippe Poitras</a> on <a href="https://unsplash.com/" class="test">Unsplash</a></p>
-    <p class="onimg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img class="odin" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="odin">ODIN</p>
+    <p class="onimg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img class="odin" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="odin">ZERO</p>
     <div class="header">
     <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. 
         <br>Sign up <em>now     </em>to get started.</p>
@@ -36,24 +37,25 @@
         </li>
         <li>
         <label for="phoneNumber">Phone Number</label>
-        <input type="tel" id="phoneNumber" autocomplete="tel" name="phoneNumber" style="display:block" pattern="[0-9]*" maxlength="12">
+        <input type="tel" id="phoneNumber" autocomplete="tel" name="phoneNumber"
+         style="display:block" pattern="[0-9]*" maxlength="12" title="Please enter a valid Phone Number">
         </li>
         <br>
         <li>
         <label for="password">Password</label> 
-        <input type="password" id="password" autocomplete="password" name="password" style="display:block" maxlength="8">
+        <input type="password" id="password" autocomplete="password" name="password" style="display:block" maxlength="8" required> 
         </li>
         <li>
         <label for="password">Confirm Password</label>
-        <input type="password" id="password2" autocomplete="password" name="password" style="display:block" maxlength="8">
+        <input type="password" id="password2" autocomplete="password" name="password" style="display:block" maxlength="8" required>
         </li>
         </ol>
        </fieldset>
+       <button type="submit">Create Account</button>
     </form>
-    <div class="bottom">
-      <button>Create Account</button>
+    <div class="bottom">    
       <p>Already have an account? <a href="#"><strong>Log in</strong></a></p>
     </div>
-    
+   </div>
 </body>
 </html>
