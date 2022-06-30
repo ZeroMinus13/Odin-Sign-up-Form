@@ -5,44 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="java.js" defer></script>
     <title>Sign Up</title>
 </head>
 <body>
-    <img id="tree" src="https://images.unsplash.com/photo-1585202900154-cf66e657d8d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="trees">
+    <img id="tree" src="https://images.unsplash.com/photo-1582510877465-8e2e899a94b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80" alt="trees">
+    <p class="imgText">Photo by <a href="https://unsplash.com/@lppoitras" class="test">Louis-Philippe Poitras</a> on <a href="https://unsplash.com/" class="test">Unsplash</a></p>
+    <p class="onimg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img class="odin" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="odin">ODIN</p>
     <div class="header">
     <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. 
-        <br>Sign up <em>now</em> to get started.</p>
+        <br>Sign up <em>now     </em>to get started.</p>
         <p>You <em>know</em> you want to.</p>
     </div>
-    <form>
+    <form action="#" method="get">
        <fieldset>
         <p><strong>Let's do this!</strong></p>
         <ol>
         <li>
         <label for="firstName">First Name</label>
-        <input id="firstName" autocomplete="given-name" name="firstName" style="display:block">
+        <input id="firstName" autocomplete="given-name" name="firstName" style="display:block" maxlength="10">
         </li>
         <li>
         <label for="lastName" >Last Name</label>
-        <input id="lastName" autocomplete="family-name" name="lastName"style="display:block">
+        <input id="lastName" autocomplete="family-name" name="lastName"style="display:block" maxlength="10">
         </li>
         <br>
         <li>
         <label for="email">Email</label>
-        <input type="email" id="email" autocomplete="email" name="email" style="display:block">
+        <input type="email" id="email" autocomplete="email" name="email" style="display:block" title="Please enter a valid Email address">
         </li>
         <li>
         <label for="phoneNumber">Phone Number</label>
-        <input type="tel" id="phoneNumber" autocomplete="tel" name="phoneNumber" style="display:block">
+        <input type="tel" id="phoneNumber" autocomplete="tel" name="phoneNumber" style="display:block" pattern="[0-9]*" maxlength="12">
         </li>
         <br>
         <li>
         <label for="password">Password</label> 
-        <input type="password" id="password" autocomplete="password" name="password" style="display:block">
+        <input type="password" id="password" autocomplete="password" name="password" style="display:block" maxlength="8">
         </li>
         <li>
         <label for="password">Confirm Password</label>
-        <input type="password" id="password2" autocomplete="password" name="password" style="display:block">
+        <input type="password" id="password2" autocomplete="password" name="password" style="display:block" maxlength="8">
         </li>
         </ol>
        </fieldset>

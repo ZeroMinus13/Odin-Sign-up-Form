@@ -1,7 +1,10 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
+*{
     box-sizing: border-box;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  } 
+    font-family: 'Roboto', sans-serif;
+}
 
 body{
     margin: 0 auto;
@@ -10,49 +13,124 @@ body{
 
 #tree {
     float: left;
+    max-width: 60%;
+    width: 49.4rem;
+    height: auto;
+}
+.imgText{
+    position: absolute;
+    top: 60rem;
+    left: 190px;
+    color: rgb(255, 255, 102);
+    font-size:1rem;
+}
+.onimg{
+    position: absolute;
+    font-family: 'Rubik Moonrocks', cursive;
+    background-color: rgba(41, 121, 175, 0.4);
+    color: white;
+    width: 49.4rem;
+    max-width: 50%;
+    font-size: 7rem;
+}
+.odin{
+    max-width: 12%;
+    height: auto;
+    margin-top: 20px
 }
 
 .header{
     padding: 90px;
-    background-color: wheat;
-    margin-left: -10px;
+    background-color:rgb(149, 209, 255);
+    margin-left: 50px;
 }
 .header>p{
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 1.6rem;
+    font-weight: bolder;
     line-height: 35px;
+    margin-left: 710px;
+    margin-top: 40px;
+    margin-bottom: -10px;
 }  
 
 form{
-    background-color:antiquewhite;    
+    background-color:rgb(223, 205, 205);
+    line-height: 33px;
+    min-width: 50rem;
 }
+
+fieldset{
+    border: none;
+}
+
+label{
+    font-weight: bold;
+    margin-left: -50px;
+}
+
+input{
+    appearance: none;
+    background-color: rgb(149, 209, 255);
+    border: 1px solid rgb(130, 105, 223);
+    width: 300px;
+    font: inherit;
+    margin-left: -50px;
+    box-shadow: 1px 1px 2px rgb(26, 92, 179);
+
+}
+
+input:focus{
+    box-shadow: 1px 1px 2px rgb(26, 92, 179);
+    border: none;   
+    outline:3px solid rgb(26, 92, 179);
+}
+
+input:invalid{
+    border: 2px solid red;
+    box-shadow: 2px 2px 2px solid red;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px rgb(182, 217, 243) inset !important;
+}
+
 fieldset>p {
-    font-size: 2rem;
-    margin-left: 100px;
+    font-size: 1.6rem;
+    margin-left: 52px;
 }
 
 .bottom{
     padding: 20px;
     background-color: rgb(128, 210, 243);
-    height: 30vh;
-
+    height: 338px;
 }
 
 button{
     padding: 30px;
-    margin-left: 50px;
-    height: 10px;
+    margin-top: 20px;
+    margin-left: 65px;
     background-color: rgb(32, 147, 241);
-    line-height: 1px;
+    line-height: 2px;
+    width: 230px;
     font-size: 20px;
     color: aliceblue;
     border-radius: 1rem;
     border: none;
+    box-shadow: 4px 4px 8px rgb(26, 92, 179);
+}
+button:hover{
+    background-color: rgb(5, 49, 85);
+    cursor:pointer;
 }
 
-div>p {
-    font-size:  1.2rem;
-    margin-left: 715px;
+.bottom>p {
+    font-size:  1.3rem;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-left: 840px;
 }
 ol{
     list-style: none;
@@ -65,23 +143,21 @@ li{
     padding: 5px;
     
 }
+a.test:link{
+    text-decoration-line:underline
+}
 a:link{
     text-decoration: none;
 }
+a:visited{
+    color: rgb(255, 26, 9);
+    font-weight: bolder;  
+}
 
-input{
-    appearance: none;
-    background-color: antiquewhite;
-    border: 1px solid rgb(130, 105, 223);
-    width: 200px;
-    font: inherit;
-    box-shadow: 1px 1px 2px rgb(26, 92, 179);
+a:hover{
+    color: rgb(4, 209, 21);
 }
-input:focus{
-    box-shadow:10px 1px 2px rgb(182, 97, 17);
-    accent-color: red;
-}
-label{
-    font-weight: bold;
 
-}
+
+
+
